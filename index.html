@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Agdasima&family=Belanosima:wght@600&family=Nunito:wght@300&family=Ysabeau+SC:wght@500&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Agdasima&family=Bebas+Neue&family=Belanosima:wght@600&family=Nunito:wght@300&family=Ysabeau+SC:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="styles_try.css">
+    <title>NDITC Activities</title>
+</head>
+<body>
+    <div id="upcoming_event_container">
+        <!-- <div class="upcoming-events">
+            <p>Upcoming <span>Events</span></p>
+         </div> -->
+         <div class="blog-section">
+             <div class="left-part">
+                 <div id="blg_hdr">
+                <h1 class="blog-title-1">Father Timm</h1>
+                 <h1 class="blog-title-2">Memorial Programming Contest 3.0</h1>
+                 </div>
+                 <p class="blog-content">
+                     This is a paragraph with more information about something important. This something has many uses and is made of 100% recycled material.
+                     
+                    
+                 <div class="buttons">
+                     <button class="register-button">Register</button>
+                     <button class="learn-more-button">Learn More</button>
+                 </div>
+             </div>
+             <div class="right-part">
+                 <div class="circle1">
+                     <div class="number">2</div>
+                     <div class="word">Months</div>
+                 </div>
+                 <div class="circle2">
+                     <div class="number">12</div>
+                     <div class="word">Days</div>
+                 </div>
+                 <div class="circle3">
+                     <span class="number">54</span>
+                     <span class="word">Minutes</span>
+                 </div>
+             </div>
+         </div>
+         <!-- <div class="buttons-container">
+              <button class="custom-button">Contests</button>
+              <button class="custom-button">Projects</button>
+              <button class="custom-button">Workshop</button>
+              <button class="custom-button">Publications</button>
+              <button class="custom-button">App</button>
+         </div> -->
+    </div>
+    <script>
+        window.addEventListener('load',()=>{
+            let indx=0;
+            const actvts_clk_btns=document.querySelectorAll('.custom-button');
+            actvts_clk_btns.forEach(El=>{
+                El.addEventListener('click',()=>{
+                    actvts_clk_btns.forEach(El=>El.classList.remove('clk_efct'));
+                    El.classList.add('clk_efct');
+            });
+            });
+        });
+    </script>
+</body>
+</html>
